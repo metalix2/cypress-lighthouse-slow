@@ -1,5 +1,9 @@
+
+const setupNodeEvents = require('./cypress/plugins/index');
+
 module.exports = {
   e2e: {
-    setupNodeEvents(on, config) {},
+    setupNodeEvents,
   },
+  // chromeWebSecurity: false,
 }

@@ -5,6 +5,7 @@
   "scripts": {
     "cypress:run": "cypress run",
     "cypress:open": "cypress open",
+    "cypress:perf": "cypress run --e2e -s cypress/e2e/*.cy.js --browser=chrome --headed",
     "cypress:verify": "cypress verify",
     "cypress:version": "cypress version",
     "cypress:info": "cypress info",
@@ -15,6 +16,10 @@
   "author": "Cypress-io",
   "license": "ISC",
   "devDependencies": {
+    "@lhci/cli": "^0.12.0",
+    "@lhci/utils": "^0.12.0",
+    "cypress": "^13.3.2",
+    "lodash": "^4.17.21"
   },
   "repository": {
     "type": "git",
